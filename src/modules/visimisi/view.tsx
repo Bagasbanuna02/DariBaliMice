@@ -42,8 +42,9 @@ export default function VisiMisi() {
             <Paper
               p={"xl"}
               sx={{
-                borderTop: `6px solid ${Warna.orange}`,
-                borderLeft: " 6px solid red",
+                borderTop: `3px solid ${Warna.orange}`,
+                borderLeft: " 3px solid red",
+                
               }}
             >
               <Text fz={"md"} fw={"bold"}>
@@ -62,18 +63,16 @@ export default function VisiMisi() {
             <Paper
               p={"xl"}
               sx={{
-               
-                borderBottom: `6px solid ${Warna.orange}`,
-                borderRight: " 6px solid red",
+                borderBottom: `3px solid ${Warna.orange}`,
+                borderRight: " 3px solid red",
               }}
             >
               <Text fz={"md"} fw={"bold"}>
-              Mendengarkan, mengerti dan memahami keinginan klien untuk Bersama
-              - sama mewujudkannya ke delam bidang konsep
+                Mendengarkan, mengerti dan memahami keinginan klien untuk
+                Bersama - sama mewujudkannya ke delam bidang konsep
               </Text>
             </Paper>
           </Box>
-         
         </SimpleGrid>
       </Box>
     </>

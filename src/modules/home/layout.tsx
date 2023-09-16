@@ -87,32 +87,32 @@ export default function HomeLayout({ children }: { children: any }) {
                       <Menu.Target>
                         <UnstyledButton className={classes.text_header}>
                           <Group spacing={1}>
-                            <Text>About Us</Text> <IconChevronDown />
+                            <Text>Tentang Kami</Text> <IconChevronDown />
                           </Group>
                         </UnstyledButton>
                       </Menu.Target>
                       <Menu.Dropdown>
-                        <Menu.Item onClick={() => scrollTo({y: 700})}>About</Menu.Item>
+                        <Menu.Item onClick={() => scrollTo({y: 700})}>Kami</Menu.Item>
                         <Menu.Item onClick={() => scrollTo({y: 900})}>Visi & Misi</Menu.Item>
-                        <Menu.Item>Client & Partner</Menu.Item>
+                        <Menu.Item>Klien & Mitra</Menu.Item>
                       </Menu.Dropdown>
                     </Menu>
                     <Menu withArrow>
                       <Menu.Target>
                         <UnstyledButton className={classes.text_header}>
                           <Group spacing={1}>
-                            <Text>Our Project</Text> <IconChevronDown />
+                            <Text>Proyek Kita</Text> <IconChevronDown />
                           </Group>
                         </UnstyledButton>
                       </Menu.Target>
                       <Menu.Dropdown>
-                        <Menu.Item>Big Project</Menu.Item>
-                        <Menu.Item>Service</Menu.Item>
-                        <Menu.Item>Product</Menu.Item>
+                        <Menu.Item>Proyek Besar</Menu.Item>
+                        <Menu.Item>Pelayanan Kami</Menu.Item>
+                        <Menu.Item>Produk</Menu.Item>
                       </Menu.Dropdown>
                     </Menu>
                     <UnstyledButton className={classes.text_header}>
-                      Contact Us
+                     Hubungi Kami
                     </UnstyledButton>
                   </Group>
                 </Group>
@@ -140,17 +140,17 @@ export default function HomeLayout({ children }: { children: any }) {
         onClose={() => setOpen(false)}
       >
         <NavLink label="Home" onClick={() => scrollTo({y: 0})}/>
-        <NavLink label="About Us">
-          <NavLink  label="About"  onClick={() => scrollTo({y: 300})}/>
+        <NavLink label="Tentang Kami">
+          <NavLink  label="Kami"  onClick={() => scrollTo({y: 300})}/>
           <NavLink label="Visi & Misi" />
-          <NavLink label="Client & Partner" />
+          <NavLink label="Klien & Mitra" />
         </NavLink>
-        <NavLink label="Our Project">
-          <NavLink label="Big Project" />
-          <NavLink label="Service" />
-          <NavLink label="Product" />
+        <NavLink label="Proyek Kami">
+          <NavLink label="Proyek Besar" />
+          <NavLink label="Pelayanan Kami" />
+          <NavLink label="Produk" />
         </NavLink>
-        <NavLink label="Contact Us" />
+        <NavLink label="Hubungi Kami" />
       </Drawer>
       {/* <MediaQuery largerThan="sm" styles={{ display: "none" }}>
         <Flex pos={"fixed"} top={0} p="lg" bg={"blue"} w={"100%"}>

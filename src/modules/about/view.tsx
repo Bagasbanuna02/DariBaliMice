@@ -38,7 +38,7 @@ export default function About() {
             fw={"bold"}
             fz={{ sm: 35, md: 40, base: 30 }}
           >
-            About Us
+            Tentang Kami
           </Text>
         </Center>
 
