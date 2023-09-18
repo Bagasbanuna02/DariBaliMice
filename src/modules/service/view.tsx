@@ -46,7 +46,7 @@ const listGambar = [
     url: "/aset/service/service6.png",
     title: "EXHIBITION",
   },
-];
+]
 
 export default function ViewService() {
   return (
