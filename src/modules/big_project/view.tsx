@@ -3,6 +3,7 @@ import {
   Box,
   Center,
   List,
+  Space,
   Text,
   ThemeIcon,
   createStyles,
@@ -23,7 +24,7 @@ export default function BigProject() {
   const { classes } = useStyles();
   return (
     <>
-      <Box bg={Warna.hijau} mx={-16} py={"lg"}>
+      <Box bg={Warna.hijau} mx={-16} pt={"lg"} mt={"lg"}>
         <Center pb={{ sm: 20, md: 30, base: 10 }}>
           <Text color={"white"} fw={"bold"} fz={{ sm: 35, md: 40, base: 30 }}>
             Proyek Besar

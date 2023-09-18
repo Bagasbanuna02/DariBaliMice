@@ -20,7 +20,7 @@ import {
 } from "@mantine/core";
 import { IconChevronDown, IconGauge } from "@tabler/icons-react";
 import { useState } from "react";
-import { useWindowScroll } from '@mantine/hooks';
+import { useWindowScroll } from "@mantine/hooks";
 
 const useStyles = createStyles((theme) => ({
   text_header: {
@@ -80,7 +80,10 @@ export default function HomeLayout({ children }: { children: any }) {
                     width={50}
                   />
                   <Group spacing={50}>
-                    <UnstyledButton className={classes.text_header} onClick={() => scrollTo({y: 0})}>
+                    <UnstyledButton
+                      className={classes.text_header}
+                      onClick={() => scrollTo({ y: 0 })}
+                    >
                       Home
                     </UnstyledButton>
                     <Menu withArrow>
@@ -92,9 +95,15 @@ export default function HomeLayout({ children }: { children: any }) {
                         </UnstyledButton>
                       </Menu.Target>
                       <Menu.Dropdown>
-                        <Menu.Item onClick={() => scrollTo({y: 700})}>Kami</Menu.Item>
-                        <Menu.Item onClick={() => scrollTo({y: 900})}>Visi & Misi</Menu.Item>
-                        <Menu.Item>Klien & Mitra</Menu.Item>
+                        <Menu.Item onClick={() => scrollTo({ y: 700 })}>
+                          Kami
+                        </Menu.Item>
+                        <Menu.Item onClick={() => scrollTo({ y: 1100 })}>
+                          Visi & Misi
+                        </Menu.Item>
+                        <Menu.Item onClick={() => scrollTo({ y: 1600 })}>
+                          Klien & Mitra
+                        </Menu.Item>
                       </Menu.Dropdown>
                     </Menu>
                     <Menu withArrow>
@@ -106,13 +115,22 @@ export default function HomeLayout({ children }: { children: any }) {
                         </UnstyledButton>
                       </Menu.Target>
                       <Menu.Dropdown>
-                        <Menu.Item>Proyek Besar</Menu.Item>
-                        <Menu.Item>Pelayanan Kami</Menu.Item>
-                        <Menu.Item>Produk</Menu.Item>
+                        <Menu.Item onClick={() => scrollTo({ y: 2580 })}>
+                          Proyek Besar
+                        </Menu.Item>
+                        <Menu.Item onClick={() => scrollTo({ y: 3350 })}>
+                          Pelayanan Kami
+                        </Menu.Item>
+                        <Menu.Item onClick={() => scrollTo({ y: 4100 })}>
+                          Produk Kami
+                        </Menu.Item>
                       </Menu.Dropdown>
                     </Menu>
-                    <UnstyledButton className={classes.text_header}>
-                     Hubungi Kami
+                    <UnstyledButton
+                      className={classes.text_header}
+                      onClick={() => scrollTo({ y: 4300 })}
+                    >
+                      Hubungi Kami
                     </UnstyledButton>
                   </Group>
                 </Group>
@@ -125,32 +143,38 @@ export default function HomeLayout({ children }: { children: any }) {
       </AppShell>
       <Drawer
         color="red"
-        size={"xs"}
+        size={"60%"}
         // title={
         //   <Text fz={"xl"} fw={"bold"}>
         //     Dari Bali MICE
         //   </Text>
         // }
-        transitionProps={{
-          transition: "rotate-left",
-          duration: 150,
-          timingFunction: "linear",
-        }}
+        // transitionProps={{
+        //   transition: "rotate-left",
+        //   duration: 150,
+        //   timingFunction: "linear",
+        // }}
         opened={open}
         onClose={() => setOpen(false)}
       >
-        <NavLink label="Home" onClick={() => scrollTo({y: 0})}/>
+        <NavLink label="Home" onClick={() => scrollTo({ y: 0 })} />
         <NavLink label="Tentang Kami">
-          <NavLink  label="Kami"  onClick={() => scrollTo({y: 300})}/>
-          <NavLink label="Visi & Misi" />
-          <NavLink label="Klien & Mitra" />
+          <NavLink label="Kami" onClick={() => scrollTo({ y: 300 })} />
+          <NavLink label="Visi & Misi" onClick={() => scrollTo({ y: 1000 })} />
+          <NavLink
+            label="Klien & Mitra"
+            onClick={() => scrollTo({ y: 1500 })}
+          />
         </NavLink>
         <NavLink label="Proyek Kami">
-          <NavLink label="Proyek Besar" />
-          <NavLink label="Pelayanan Kami" />
-          <NavLink label="Produk" />
+          <NavLink label="Proyek Besar" onClick={() => scrollTo({ y: 1800 })} />
+          <NavLink
+            label="Pelayanan Kami"
+            onClick={() => scrollTo({ y: 3000 })}
+          />
+          <NavLink label="Produk Kami" onClick={() => scrollTo({ y: 4500 })} />
         </NavLink>
-        <NavLink label="Hubungi Kami" />
+        <NavLink label="Hubungi Kami" onClick={() => scrollTo({ y: 4900 })} />
       </Drawer>
       {/* <MediaQuery largerThan="sm" styles={{ display: "none" }}>
         <Flex pos={"fixed"} top={0} p="lg" bg={"blue"} w={"100%"}>

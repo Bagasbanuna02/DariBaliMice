@@ -50,9 +50,11 @@ export default function Product() {
   return (
     <>
       {/* <Space  /> */}
+      <Box my={"lg"}>
       <Divider
         color={Warna.hijau}
         size={"xl"}
+        my={"sm"}
         mx={"lg"}
         pt={"xl"}
         label={<Title  fz={{ sm: 35, md: 40, base: 30 }}>Produk Kami</Title>}
@@ -77,6 +79,7 @@ export default function Product() {
           </Grid.Col>
         </Grid>
       </Center>
+      </Box>
     </>
   );
 }
