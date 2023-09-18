@@ -44,7 +44,7 @@ const listGambar = [
   {
     id: 6,
     url: "/aset/service/service6.png",
-    title: "EXIBITION",
+    title: "EXHIBITION",
   },
 ];
 
