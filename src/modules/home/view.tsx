@@ -49,5 +49,5 @@ function MyHome() {
         </AspectRatio>
       </Box>
     </>
-  );
+  )
 }
